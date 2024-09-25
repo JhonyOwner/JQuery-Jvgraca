@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="square">
+        <header>
+            <h1>Lista de Tarefas</h1>
+            <h3>Informe abaixo suas atividades e clique quando for concluida!</h3>
+        </header>
+        <section class="container-section">
+            <div class="lista">
+                <form id="task-form">
+                    <input type="text" placeholder="Escreva sua atividade" id="atividade" required>
+                    <button type="submit">Acrescentar</button>
+                </form>
+            </div>
+        </section>
+        <p>
+            <ol id="task-list"></ol>
+        </p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
